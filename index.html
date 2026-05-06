@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casa Mare | Alquiler de Casa de Lujo en Cartagena de Indias</title>
+  <meta name="description" content="Reserva Casa Mare, una exclusiva casa colonial de lujo en el centro histórico de Cartagena. 4 habitaciones, piscina privada y rooftop. El refugio perfecto en el Caribe.">
+  <link rel="stylesheet" href="./src/index.css">
+  
+  <!-- SEO: Datos estructurados / Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Casa Mare",
+    "image": "https://casa-mare.com/img/Piscina%20hamaca.jpg",
+    "@id": "https://casa-mare.com",
+    "url": "https://casa-mare.com",
+    "telephone": "",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Centro Histórico",
+      "addressLocality": "Cartagena",
+      "addressRegion": "Bolívar",
+      "addressCountry": "CO"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 10.423,
+      "longitude": -75.551
+    },
+    "description": "Exclusiva casa colonial de lujo en el corazón de Cartagena con piscina privada y rooftop.",
+    "numberOfRooms": 4,
+    "occupancy": {
+      "@type": "QuantitativeValue",
+      "value": 13
+    },
+    "amenityFeature": [
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Piscina Privada",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Rooftop con Jacuzzi",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Aire Acondicionado",
+        "value": true
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar" id="navbar">
+    <a href="#inicio" class="logo">CASA MARE</a>
+    <div class="nav-links">
+      <a href="#galeria" class="nav-item">Galería</a>
+      <a href="#capacidad" class="nav-item">Acomodación</a>
+      <a href="#amenidades" class="nav-item">Amenidades</a>
+      <a href="#tour" class="nav-item">Tour 360</a>
+      <a href="#cta-final" class="nav-item">Reservar</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Menú">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay Menu -->
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-content">
+      <a href="#galeria" class="mobile-nav-item">Galería</a>
+      <a href="#capacidad" class="mobile-nav-item">Espacios</a>
+      <a href="#amenidades" class="mobile-nav-item">Amenidades</a>
+      <a href="#tour" class="mobile-nav-item">Tour 360</a>
+      <a href="#cta-final" class="btn btn-outline-light mobile-btn-nav">Reservar</a>
+    </div>
+  </div>
+
+  <!-- 1. Hero Principal -->
+  <header id="inicio" class="hero">
+    <img src="./img/Piscina%20hamaca.jpg" alt="Piscina Casa Colonial" class="hero-bg desktop-bg">
+    
+    <!-- Mobile Carousel -->
+    <div class="mobile-hero-carousel">
+      <div class="carousel-track" id="hero-carousel-track">
+        <div class="carousel-slide">
+          <img src="./img/Piscina%20hamaca.jpg" alt="Piscina Casa Colonial" class="carousel-img">
+        </div>
+        <div class="carousel-slide">
+          <img src="./img/hero%202.jpg" alt="Casa Mare 2" class="carousel-img">
+        </div>
+        <div class="carousel-slide">
+          <img src="./img/hero%203.jpg" alt="Casa Mare 3" class="carousel-img">
+        </div>
+      </div>
+      <div class="carousel-dots" id="hero-carousel-dots">
+         <button class="carousel-dot active" aria-label="Slide 1"></button>
+         <button class="carousel-dot" aria-label="Slide 2"></button>
+         <button class="carousel-dot" aria-label="Slide 3"></button>
+      </div>
+    </div>
+
+    <div class="hero-overlay"></div>
+    <div class="container hero-content reveal">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.7); border-bottom: 1px solid rgba(255,255,255,0.3); display: inline-block; padding-bottom: 8px;">Centro Histórico, Cartagena de Indias</span>
+      <h1>Casa Mare: Tu Refugio de Lujo <br>Privado en el Caribe.</h1>
+      <p>Exclusividad absoluta en el corazón de Cartagena, Colombia. Una casa colonial de 3 niveles con piscina interna, rooftop privado y servicio premium, reservada únicamente para tu grupo.</p>
+      <div class="hero-actions">
+        <a href="#calendario" class="btn btn-outline-light">VER DISPONIBILIDAD</a>
+        <a href="#cta-final" class="btn btn-text" style="color: var(--color-white);">RESERVA DIRECTA <span>&rarr;</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Barra de Confianza -->
+  <section class="quick-facts border-bottom">
+    <div class="container desktop-quick-facts">
+      <div class="quick-facts-grid reveal delay-1">
+        <div class="fact-card"><span class="label">Exclusividad</span><span class="value">Casa Completa</span></div>
+        <div class="fact-card"><span class="label">Capacidad</span><span class="value">13 Huéspedes</span></div>
+        <div class="fact-card"><span class="label">Habitaciones</span><span class="value">4 Recámaras</span></div>
+        <div class="fact-card"><span class="label">Highlight</span><span class="value">Piscina & Rooftop</span></div>
+      </div>
+    </div>
+    <div class="marquee-container reveal delay-1 mobile-quick-facts">
+      <div class="marquee-content">
+        <div class="fact-item"><span class="label">Exclusividad</span> <span class="value">Casa Completa</span><span class="separator">•</span></div>
+        <div class="fact-item"><span class="label">Capacidad</span> <span class="value">13 Huéspedes</span><span class="separator">•</span></div>
+        <div class="fact-item"><span class="label">Habitaciones</span> <span class="value">4 Recámaras</span><span class="separator">•</span></div>
+        <div class="fact-item"><span class="label">Highlight</span> <span class="value">Piscina & Rooftop</span><span class="separator">•</span></div>
+        <!-- Duplicado para el bucle -->
+        <div class="fact-item duplicated"><span class="label">Exclusividad</span> <span class="value">Casa Completa</span><span class="separator">•</span></div>
+        <div class="fact-item duplicated"><span class="label">Capacidad</span> <span class="value">13 Huéspedes</span><span class="separator">•</span></div>
+        <div class="fact-item duplicated"><span class="label">Habitaciones</span> <span class="value">4 Recámaras</span><span class="separator">•</span></div>
+        <div class="fact-item duplicated"><span class="label">Highlight</span> <span class="value">Piscina & Rooftop</span><span class="separator">•</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Experiencia -->
+  <section class="section-padding">
+    <div class="container experience-wrap">
+      <div class="experience-image reveal">
+        <img src="./img/Interior%20colonial%20elegante.jpg" alt="Interior colonial elegante" loading="lazy">
+      </div>
+      <div class="experience-text reveal delay-2">
+        <span class="eyebrow">La Propuesta</span>
+        <h2 class="section-title">Tu santuario privado en Cartagena de Indias.</h2>
+        <p>A diferencia de un hotel boutique, aquí no compartes espacios. Desde el patio central con su piscina de piedra hasta los salones de lectura y el rooftop, cada metro cuadrado está reservado exclusivamente para tu grupo.</p>
+        <p>Arquitectura colonial intacta fusionada con diseño contemporáneo silencioso. Espacios pensados para el descanso, la gastronomía y la conexión íntima en una de las ciudades más vibrantes del mundo.</p>
+        <br>
+        <a href="#galeria" class="link-underline">Explorar espacios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Galería -->
+  <section id="galeria" class="gallery border-top gallery-section-spacing">
+    <div class="container">
+      <div class="text-center reveal mb-24">
+        <h2 class="section-title">Galería</h2>
+        <p class="section-subtitle center">Recorre cada rincón de la casa a través de imágenes que capturan la esencia de tu estadía.</p>
+      </div>
+      <div class="hero-gallery reveal delay-1">
+        <div class="hero-media">
+          <div class="main-image-container">
+            <img class="hero-image" src="./img/Piscina%20hamaca.jpg" alt="Piscina Casa Colonial" loading="lazy" />
+          </div>
+
+          <div class="thumb-wrapper">
+            <div class="thumb-track">
+              <!-- Set 1 -->
+              <button class="thumb-item" aria-label="Ampliar imagen"><img src="./img/hero 3.jpg" alt="Sala de estar" loading="lazy" /></button>
+              <button class="thumb-item" aria-label="Ampliar imagen"><img src="./img/ba%C3%B1o%20h2.avif" alt="Baño de lujo" loading="lazy" /></button>
+              <button class="thumb-item" aria-label="Ampliar imagen"><img src="./img/ba%C3%B1o%20h2%203.avif" alt="Detalle baño" loading="lazy" /></button>
+              <button class="thumb-item desktop-only" aria-label="Ampliar imagen"><img src="./img/h1%203.avif" alt="Habitación principal" loading="lazy" /></button>
+              <button class="thumb-item desktop-only" aria-label="Ampliar imagen"><img src="./img/Piscina%20hamaca.avif" alt="Patio Central" loading="lazy" /></button>
+              
+              <!-- Set 2 for infinite scroll -->
+              <button class="thumb-item" aria-label="Ampliar imagen"><img src="./img/hero 3.jpg" alt="Sala de estar" loading="lazy" /></button>
+              <button class="thumb-item" aria-label="Ampliar imagen"><img src="./img/ba%C3%B1o%20h2.avif" alt="Baño de lujo" loading="lazy" /></button>
+              <button class="thumb-item" aria-label="Ampliar imagen"><img src="./img/ba%C3%B1o%20h2%203.avif" alt="Detalle baño" loading="lazy" /></button>
+              <button class="thumb-item desktop-only" aria-label="Ampliar imagen"><img src="./img/h1%203.avif" alt="Habitación principal" loading="lazy" /></button>
+              <button class="thumb-item desktop-only" aria-label="Ampliar imagen"><img src="./img/Piscina%20hamaca.avif" alt="Patio Central" loading="lazy" /></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center reveal mt-40 pb-20">
+      <a href="#calendario" class="btn btn-solid">Ver disponibilidad completa</a>
+    </div>
+  </section>
+
+  <!-- 5. Tour 360 -->
+  <section id="tour" class="tour section-padding border-top pt-60 pb-0">
+    <div class="container tour-container reveal">
+      <div class="tour-header mb-30">
+        <span class="eyebrow">Inmersión Virtual</span>
+        <h2 class="section-title">Explora la Magia de Casa Mare</h2>
+        <p class="section-subtitle center" style="margin-top: 16px;">Adéntrate en nuestro recorrido interactivo y descubre cada detalle de tu próximo refugio colonial. Desde el patio central con piscina privada hasta el rooftop exclusivo, visualiza tu estadía de lujo en el corazón de Cartagena.</p>
+      </div>
+      <div class="tour-iframe-wrapper">
+        <div class="tour-overlay" id="tour-overlay">
+          <div class="tour-overlay-circle">
+            <span>Iniciar Tour<br><strong class="tour-360-text">360&deg;</strong></span>
+          </div>
+        </div>
+        <iframe src="https://tour.panoee.net/69ebffd0444678f9a5987c1e" title="Virtual Tour" allow="xr-spatial-tracking; vr; gyroscope; accelerometer; fullscreen; autoplay; xr" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+      </div>
+      <p class="tour-hint">Arrastra y explora cada rincón de la propiedad antes de llegar.</p>
+    </div>
+
+    <!-- Mini CTA después del Tour -->
+    <div class="mini-cta-section border-top">
+      <div class="container reveal">
+        <h3>¿Listo para vivir la experiencia?</h3>
+        <p>Asegura hoy mismo tus fechas en este paraíso privado. La exclusividad total te espera en el corazón de Cartagena.</p>
+        <div class="cta-btns">
+          <a href="#calendario" class="btn btn-outline">Consultar fechas</a>
+          <a href="#cta-final" class="btn btn-solid">Reserva Directa</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Capacidad -->
+  <section id="capacidad" class="section-padding pt-0">
+    <div class="container reveal">
+      
+      <div class="distribution-wrap border-top">
+        <div>
+          <span class="eyebrow">Distribución</span>
+          <h2 class="section-title section-title-md">Configuración de recámaras</h2>
+          <p class="text-muted-lg">Pensada para garantizar el descanso de cada huésped con privacidad y exclusividad.</p>
+        </div>
+        <div class="distribution-list">
+          <div class="distribution-item">
+            <span class="dist-title">Recámara 1</span>
+            <span class="dist-desc">1 King Size + 1 Sofá Cama</span>
+          </div>
+          <div class="distribution-item">
+            <span class="dist-title">Recámara 2</span>
+            <span class="dist-desc">1 King Size</span>
+          </div>
+          <div class="distribution-item">
+            <span class="dist-title">Recámara 3</span>
+            <span class="dist-desc">2 Matrimoniales</span>
+          </div>
+          <div class="distribution-item">
+            <span class="dist-title">Recámara 4</span>
+            <span class="dist-desc">1 Matrimonial + 1 Individual</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center reveal mt-50">
+        <p class="callout-serif">Ideal para grupos exclusivos y familias.</p>
+        <a href="#calendario" class="btn btn-outline">Verificar calendario</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Amenidades -->
+  <section id="amenidades" class="amenities section-padding border-top">
+    <div class="container reveal">
+      <h2 class="section-title">Comodidades de tu Alojamiento de Lujo en Cartagena</h2>
+      
+      <div class="airbnb-amenities-grid">
+        <!-- Visible Items -->
+        <div class="airbnb-amenity">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8m0 0V5m0 8h8M4 13h8m-8 0a2 2 0 01-2-2V5"></path></svg>
+          <span>Cocina equipada</span>
+        </div>
+        <div class="airbnb-amenity">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path></svg>
+          <span>Wi-Fi de alta velocidad</span>
+        </div>
+        <div class="airbnb-amenity">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          <span>Zona para trabajar</span>
+        </div>
+        <div class="airbnb-amenity">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+          <span>Piscina interna privada 24h</span>
+        </div>
+        <div class="airbnb-amenity">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+          <span>Jacuzzi en Rooftop</span>
+        </div>
+        <div class="airbnb-amenity">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+          <span>Sábanas y ropa de cama premium</span>
+        </div>
+        
+        <!-- Hidden Items -->
+        <div class="airbnb-amenity amenity-hidden">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+          <span>Cámaras de seguridad exteriores</span>
+        </div>
+        <div class="airbnb-amenity amenity-hidden">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+          <span>Cerradura inteligente</span>
+        </div>
+        <div class="airbnb-amenity amenity-hidden">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+          <span>Climatización entera (A/C y ventiladores)</span>
+        </div>
+        <div class="airbnb-amenity amenity-hidden">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+          <span>Servicio doméstico incluido</span>
+        </div>
+        <div class="airbnb-amenity amenity-hidden">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+          <span>Microondas y cafetera</span>
+        </div>
+        <div class="airbnb-amenity amenity-hidden">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span>Lavadora, secadora y plancha</span>
+        </div>
+         <div class="airbnb-amenity amenity-hidden">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span>Champú, acondicionador, y jabones</span>
+        </div>
+        <div class="airbnb-amenity amenity-hidden">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+          <span>Agua caliente y toallas</span>
+        </div>
+      </div>
+      
+      <div style="margin-top: 50px;" id="btn-amenities-container">
+        <button id="btn-ver-mas-amenidades" class="link-btn">Mostrar todas las 14 amenidades</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Servicios -->
+  <section id="servicios" class="section-padding border-top" style="background-color: var(--color-light);">
+    <div class="container services-wrap reveal">
+      <div class="services-list">
+        <span class="eyebrow">Hospitalidad</span>
+        <h2 class="services-heading">Servicios Premium.</h2>
+        
+        <div class="service-row">
+          <h4>Limpieza y mantenimiento incluidos</h4>
+          <p>Servicio doméstico especializado de lunes a sábado garantizando que la casa permanezca en perfecto estado durante tu estadía.</p>
+        </div>
+        <div class="service-row">
+          <h4>Jacuzzi & Piscina temperada</h4>
+          <p>Áreas húmedas climatizadas siempre listas para disfrutar a cualquier hora del día o al volver en la noche.</p>
+        </div>
+        <div class="service-row">
+          <h4>Desayuno Caribeño Extendido (Opcional)</h4>
+          <p>Disfruta lo mejor de la gastronomía de Cartagena agregando la preparación diaria completa en casa.</p>
+        </div>
+      </div>
+      <div class="experience-image" style="aspect-ratio: 3/4; height: auto;">
+        <img src="./img/lobby%20x%204.avif" alt="Servicio impecable" loading="lazy">
+      </div>
+    </div>
+    
+    <div class="container text-center reveal mt-80">
+      <h3 class="hospitality-heading">Hospitalidad sin compromisos.</h3>
+      <a href="#cta-final" class="btn btn-solid">Hablar con un concierge</a>
+    </div>
+  </section>
+
+  <!-- 9. Ubicación -->
+  <section id="ubicacion" class="location section-padding">
+    <div class="container reveal">
+      <div class="location-header">
+        <span class="eyebrow eyebrow-light">Entorno Privilegiado</span>
+        <h2 class="section-title">Explora Cartagena desde tu Puerta</h2>
+        <p class="section-subtitle location-subtitle">Casa Mare se encuentra en una de las calles más encantadoras del Centro Histórico. Desde aquí pueden recorrer caminando:</p>
+      </div>
+
+      <div class="guide-grid">
+        <!-- Gastronomía -->
+        <div class="guide-column">
+          <h3 class="guide-cat">Gastronomía <span>(2-5 min)</span></h3>
+          <div class="guide-group">
+            <div class="guide-item">
+              <span class="guide-name">Carmen</span>
+              <span class="guide-tag">Alta cocina contemporánea</span>
+            </div>
+            <div class="guide-item">
+              <span class="guide-name">Celele</span>
+              <span class="guide-tag">Cocina caribeña premiada</span>
+            </div>
+            <div class="guide-item">
+              <span class="guide-name">1621</span>
+              <span class="guide-tag">Fine dining (Santa Clara)</span>
+            </div>
+            <div class="guide-item">
+              <span class="guide-name">La Vitrola</span>
+              <span class="guide-tag">Clásico cartagenero</span>
+            </div>
+            <div class="guide-item">
+              <span class="guide-name">Alma</span>
+              <span class="guide-tag">Cocina local refinada</span>
+            </div>
+            <div class="guide-item">
+              <span class="guide-name">Candé</span>
+              <span class="guide-tag">Tradición y sabor caribe</span>
+            </div>
+            <div class="guide-item">
+              <span class="guide-name">NIKU</span>
+              <span class="guide-tag">Cocina japonesa premium</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coctelería & Cultura -->
+        <div class="guide-column">
+          <h3 class="guide-cat">Vida & Cultura</h3>
+          <div class="guide-group">
+            <div class="guide-item">
+              <span class="guide-name">Alquímico</span>
+              <span class="guide-tag">Mixología (World's 50 Best)</span>
+            </div>
+            <div class="guide-item">
+              <span class="guide-name">El Barón</span>
+              <span class="guide-tag">Coctelería de autor</span>
+            </div>
+            <div class="guide-item">
+              <span class="guide-name">Demente</span>
+              <span class="guide-tag">Ambiente & Tapas</span>
+            </div>
+            <div class="guide-spacer"></div>
+            <div class="guide-item">
+              <span class="guide-name">Las Murallas</span>
+              <span class="guide-tag">Paseos al atardecer</span>
+            </div>
+            <div class="guide-item">
+              <span class="guide-name">Plazas & Iglesias</span>
+              <span class="guide-tag">Santodomingo & Santo Toribio</span>
+            </div>
+            <div class="guide-item">
+              <span class="guide-name">Playas</span>
+              <span class="guide-tag">Caminando en 10–15 min</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Calendario -->
+  <section id="calendario" class="section-padding">
+    <div class="container calendar-container reveal">
+      <div class="text-center mb-24">
+        <span class="eyebrow">Planifica tu escape</span>
+        <h2>Disponibilidad en tiempo real.</h2>
+        <p class="section-subtitle center calendar-subtitle">Selecciona tu fecha de llegada y salida para habilitar la solicitud de reserva.</p>
+      </div>
+      
+      <div id="custom-calendar-root"></div>
+      
+      <div class="calendar-legend">
+        <div class="calendar-legend-item">
+          <span class="legend-swatch legend-swatch--available"></span>
+          <span>Disponible</span>
+        </div>
+        <div class="calendar-legend-item">
+          <span class="legend-swatch legend-swatch--selected"></span>
+          <span>Seleccionado</span>
+        </div>
+        <div class="calendar-legend-item">
+          <span class="legend-swatch legend-swatch--blocked" style="font-size: 11px; width: auto; height: auto; padding: 0 2px;">12</span>
+          <span>Reservado</span>
+        </div>
+      </div>
+
+      <div class="text-center btn-cotizar-wrap">
+        <a href="#cta-final" id="btn-cotizar" class="btn btn-outline" style="pointer-events: none; opacity: 0.4; max-width: 250px; width: 100%;">Selecciona tus fechas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Social Proof -->
+  <section class="section-padding border-top social-proof-section">
+    <div class="container reveal social-proof-container">
+      <span class="eyebrow mb-24">Testimonios</span>
+      
+      <div class="testimonial-stars">
+        ★★★★★
+      </div>
+      
+      <h2 class="testimonial-quote">
+        "Espectacular, Una casa hermosa muy amplia y perfecta para compartir en familia. Tiene muy buena ubicación, en el corazón de Cartagena, en una zona ideal para disfrutar la ciudad, su historia y su magia. Todo estaba impecablemente limpio, las habitaciones son muy cómodas y acogedoras, tiene espacios perfectos para compartir como la piscina y la terraza. Definitivamente un lugar maravilloso para disfrutar de Cartagena. ¡Excelente experiencia!"
+      </h2>
+      
+      <div class="testimonial-author">
+        <img src="https://ui-avatars.com/api/?name=Lady+Tatiana&background=111A22&color=fff&rounded=true&font-size=0.33" alt="Lady Tatiana" class="testimonial-author-avatar">
+        <div class="testimonial-author-info">
+          <div class="testimonial-author-name">Lady Tatiana</div>
+          <div class="testimonial-author-location">Bogotá, Colombia</div>
+          <div class="testimonial-author-detail">Estancia de una noche</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FAQ -->
+  <section class="section-padding border-top">
+    <div class="container faq-container reveal">
+      <div class="text-center" style="margin-bottom: 60px;">
+        <span class="eyebrow">Respuestas</span>
+        <h2 class="section-title">Preguntas Frecuentes sobre tu Estancia en Cartagena.</h2>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-header"><h4>¿La casa es compartida con otras personas?</h4><span class="faq-icon">+</span></div>
+        <div class="faq-content"><p>No. El alquiler es por la propiedad completa. Piscina, rooftop, cocinas y áreas de estar serán de uso exclusivo para ti y tu grupo.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-header"><h4>¿Cuáles son las reglas de fiestas o eventos?</h4><span class="faq-icon">+</span></div>
+        <div class="faq-content"><p>Debido a regulaciones de la zona histórica y para preservar la tranquilidad, no se permiten fiestas ruidosas ni invitados externos no registrados. Cenas privadas y reuniones tranquilas son bienvenidas.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-header"><h4>¿Cómo funciona el check-in?</h4><span class="faq-icon">+</span></div>
+        <div class="faq-content"><p>Ofrecemos self check-in a través de una cerradura inteligente, pero nuestro concierge siempre estará disponible a tu llegada para darte un recorrido y entregarte las llaves físicas adicionales.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-header"><h4>¿Pueden coordinar transporte desde el aeropuerto?</h4><span class="faq-icon">+</span></div>
+        <div class="faq-content"><p>Sí. Una vez confirmes tu reserva, nuestro servicio de concierge puede agendar transportes seguros en van privada o camionetas blindadas si así lo requieres.</p></div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- 14. CTA Final -->
+  <section id="cta-final" class="final-cta">
+    <img src="./img/h2%20noche.avif" alt="Reserva tu escape" class="final-cta-bg">
+    <div class="final-cta-content reveal">
+      <h2 class="section-title">Asegura tu estancia.</h2>
+      <p>Llena los datos a continuación para habilitar la comunicación directa y asegurar las fechas para tu grupo.</p>
+      
+      <!-- Validación Estricta Requerida -->
+      <form class="concierge-form" id="reserva-form" onsubmit="event.preventDefault();">
+        <div class="input-group">
+          <span class="input-label">Nombre del titular responsable</span>
+          <input type="text" id="res-name" class="concierge-input" placeholder="Ej. Camila Valdés" autocomplete="off">
+        </div>
+        <div class="input-group">
+          <span class="input-label">Número de celular (WhatsApp)</span>
+          <input type="tel" id="res-phone" class="concierge-input" placeholder="Ej. +57 300 000 0000" autocomplete="off">
+        </div>
+        <div class="input-group">
+          <span class="input-label">Fechas tentativas de reserva</span>
+          <input type="text" id="res-dates" class="concierge-input" placeholder="Elige un rango de fechas" autocomplete="off" readonly style="cursor: pointer;">
+          <!-- Custom popup calendar for range selection -->
+          <div id="calendar-popup" class="calendar-popup-container" style="display: none; position: absolute; bottom: 100%; left: 0; right: 0; z-index: 1000; margin-bottom: 8px;">
+            <div id="custom-calendar-cta"></div>
+          </div>
+        </div>
+        <button id="btn-whatsapp" class="btn btn-solid btn-disabled" disabled>Conectar por WhatsApp</button>
+      </form>
+      
+      <div class="airbnb-alternative" style="margin-top: 40px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; display: flex; flex-direction: column; align-items: center;">
+        <p style="font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-bottom: 16px; letter-spacing: 0.05em;">¿Prefieres reservar a través de Airbnb?</p>
+        <a href="https://www.airbnb.mx/rooms/1555894149196662461" target="_blank" class="btn btn-outline-light" style="width: 100%; max-width: 320px; justify-content: center; gap: 12px; border-color: rgba(255,255,255,0.3); color: rgba(255,255,255,0.9);">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="currentColor">
+            <path d="M224 373.1c-25.2-31.7-40.1-59.4-45-83.2-2.3-11.4-2.3-22.3-.2-32.6.4-2 1.8-4.6 3.6-7.3.5-.8 1.1-1.6 1.8-2.5 6.3-8.8 16-16.8 28.5-23.7l11.4-6.3L235.6 224c16.6 9.3 29.3 19.6 36.8 29.8 3.3 4.4 5.9 8.6 7.6 12l.1.3c2.7 5.9 4.3 11.2 5 15.9 2 11.8 1.5 24-1.2 35.3-4.2 17.6-15 39.5-35.3 64.1-8.1 9.9-16.4 19.5-24.6 28.8zm150-136.2c0-30.6-21.7-56.1-50.5-61.9-8.7-1.8-17.7 0-25.8 4.6-10.3 5.8-31 19.3-51.5 35.7v-2.3c2.9-42.5 16-118 43.1-164.5C296 35.8 307.7 26 319.8 26c10.3 0 20.3 5.4 28 15.2 16.9 21.6 42.2 88.5 42.2 153.2 0 17.4-4.8 36.3-16 52.5zm19.6-123.6C374.3 84.4 349.5 0 318.5 0c-30.6 0-54.8 22.8-71.2 46.2C226.7 88.7 217 155 214 200.7H212c-3-45.7-12.7-112-33.3-154.5C162.3 22.8 138.1 0 107.5 0 76.5 0 51.7 84.4 32.4 113.3c-14.7 21.9-21.3 49-21.3 75.8 0 45.4 26.2 80.6 57 88.9 9.3 2.5 19.1 2.3 28.1-1 3.5-1.3 6.9-3.1 10.1-5.6l1.3-.8c5.4-3.5 10.7-7 15.1-10v5c0 1.2.1 2.5.1 3.7C125 329.8 178.6 397 212.7 433l6.5 6.9 4.8 5.1c7.2 7.7 18.2 13 29.5 13s22.3-5.3 29.5-13l5.8-6.1c32.7-34.6 86.9-102 88.2-162.3.1-1.3.1-2.7.1-4l-.1-1.7c4 3 8.3 5.7 12.8 8v-.2c7.8 4 16.5 5.5 25.1 4.5 29.1-3.6 51.5-28.5 51.5-57.9 0-33.1-14.3-80.1-26.6-105z"/>
+          </svg>
+          Reservar en Airbnb
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 13. Footer / Políticas -->
+  <footer class="footer border-top section-padding" style="background-color: var(--color-dark); color: var(--color-white); padding-bottom: 40px;">
+    <div class="container reveal">
+      <div class="footer-grid">
+        <!-- Brand & Vision -->
+        <div class="footer-col-brand">
+          <h4 class="footer-brand">Casa Mare</h4>
+          <p class="footer-desc">Refugio mediterráneo en el Caribe. Una experiencia premium reservada únicamente para ti y tu grupo, combinando la esencia del buen vivir con la belleza del trópico.</p>
+          <div class="footer-socials" style="display: flex; gap: 24px; align-items: center; margin-top: 24px;">
+            <a href="https://api.whatsapp.com/send/?phone=+573015425909" target="_blank" class="footer-social-icon" aria-label="Whatsapp Directo">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="currentColor">
+                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+              </svg>
+            </a>
+            <a href="https://www.airbnb.mx/rooms/1555894149196662461" target="_blank" class="footer-social-icon" aria-label="Reserva en Airbnb">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="currentColor">
+                <path d="M224 373.1c-25.2-31.7-40.1-59.4-45-83.2-2.3-11.4-2.3-22.3-.2-32.6.4-2 1.8-4.6 3.6-7.3.5-.8 1.1-1.6 1.8-2.5 6.3-8.8 16-16.8 28.5-23.7l11.4-6.3L235.6 224c16.6 9.3 29.3 19.6 36.8 29.8 3.3 4.4 5.9 8.6 7.6 12l.1.3c2.7 5.9 4.3 11.2 5 15.9 2 11.8 1.5 24-1.2 35.3-4.2 17.6-15 39.5-35.3 64.1-8.1 9.9-16.4 19.5-24.6 28.8zm150-136.2c0-30.6-21.7-56.1-50.5-61.9-8.7-1.8-17.7 0-25.8 4.6-10.3 5.8-31 19.3-51.5 35.7v-2.3c2.9-42.5 16-118 43.1-164.5C296 35.8 307.7 26 319.8 26c10.3 0 20.3 5.4 28 15.2 16.9 21.6 42.2 88.5 42.2 153.2 0 17.4-4.8 36.3-16 52.5zm19.6-123.6C374.3 84.4 349.5 0 318.5 0c-30.6 0-54.8 22.8-71.2 46.2C226.7 88.7 217 155 214 200.7H212c-3-45.7-12.7-112-33.3-154.5C162.3 22.8 138.1 0 107.5 0 76.5 0 51.7 84.4 32.4 113.3c-14.7 21.9-21.3 49-21.3 75.8 0 45.4 26.2 80.6 57 88.9 9.3 2.5 19.1 2.3 28.1-1 3.5-1.3 6.9-3.1 10.1-5.6l1.3-.8c5.4-3.5 10.7-7 15.1-10v5c0 1.2.1 2.5.1 3.7C125 329.8 178.6 397 212.7 433l6.5 6.9 4.8 5.1c7.2 7.7 18.2 13 29.5 13s22.3-5.3 29.5-13l5.8-6.1c32.7-34.6 86.9-102 88.2-162.3.1-1.3.1-2.7.1-4l-.1-1.7c4 3 8.3 5.7 12.8 8v-.2c7.8 4 16.5 5.5 25.1 4.5 29.1-3.6 51.5-28.5 51.5-57.9 0-33.1-14.3-80.1-26.6-105z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/romimarecollection/" target="_blank" class="footer-social-icon" aria-label="Instagram Oficial">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="currentColor">
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sitemap -->
+        <div>
+          <h4 class="footer-title">Descubre</h4>
+          <ul class="footer-list">
+            <li><a href="#galeria">La Propiedad</a></li>
+            <li><a href="#capacidad">Acomodación</a></li>
+            <li><a href="#amenidades">Amenidades</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+          <h4 class="footer-title">Contacto</h4>
+          <ul class="footer-list">
+            <li><a href="mailto:info@romimarecollection.com">info@romimarecollection.com</a></li>
+            <li><a href="tel:+573015425909">+57 301 542 5909</a></li>
+            <li style="margin-top: 8px;">Cartagena de Indias,<br>Bolívar, Colombia</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom border-top footer-bottom-border">
+        <p>© 2026 Casa Mare. Todos los derechos reservados.</p>
+        <div class="footer-links-bottom">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Element -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+    <img class="lightbox-img" src="" alt="Vista ampliada" />
+  </div>
+
+  <script defer src="./src/main.js"></script>
+</body>
+</html>
